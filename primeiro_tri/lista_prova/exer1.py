@@ -39,4 +39,33 @@ if lado1==0 or lado2==0 or lado3==0:
 else:
     if lado1==lado2 and lado1==lado3
     print("seu triângulo é do tipo equilátero.")
-elif lado1!=lado2 and lado1==lado3    
+elif lado1!=lado2 and lado1==lado3 or lado1==lado2 and lado1!=lado3or lado2==lado1 and lado2!=lado3 or lado2!=lado1 and lado2==lado3:
+    print("seu triângulo é do tipo isósceles.")
+    else:
+        print("seu triângulo é do tipo escaleno.")
+        
+def sum(a, b, c):
+    return (a + b + c)
+    
+    a = int(input("digite o primeiro número: "))
+    b = int(input("digite o segundo número: "))
+    c = int(input("digite o terceiro número:"))
+    
+    print(f"a soma de {a} e {b} e {c} é igual a {sum(a, b, c)}")
+    
+numero1 = int(input("digite o primeiro número: "))
+numero2 = int(input("digite o segundo número: "))
+numero3 = int(input("digite o terceiro número: "))
+soma = numero1 + numero2
+print(soma)
+
+numero = int(input("digite um número: "))
+if numero%2 == 0:
+    print("seu número é par.")
+else:
+    print("seu número é ímpar.")
+    
+base = float(input("digite a base do triângulo (em cm): "))
+altura = float(input("digite a altura do triângulo (em cm): "))
+area = (base * altura)//2
+print(area)    
